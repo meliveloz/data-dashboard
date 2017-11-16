@@ -1,3 +1,55 @@
-/*
- * Estilos de tu proyecto
- */
+
+body{
+	margin: 0;
+
+}
+nav{
+	height: 100px;
+	text-align: center;
+
+}
+
+.fa-bars{
+	position: relative;
+    left: 20em;
+    bottom: 0.8em;
+    font-size: 25px;
+}
+.fa-bars:hover{
+	color:#ffc107;
+
+}
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 24px;
+	margin-left:2em;
+	display: inline-block;
+}
+.fa-chevron-circle-down{
+	font-size: 30px;
+	text-align: left;
+	margin-left: 1em;
+
+}
+.fa-chevron-circle-down:hover{
+	color: #ffc107;
+}
+
+
+#sede{
+	cursor: pointer;
+}
+.submenu ul li{
+
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 1em;
+}
+
+.logo{
+	padding: 1em;
+}
