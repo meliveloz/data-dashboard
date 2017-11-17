@@ -17,6 +17,28 @@ function myFunction() { //y este es my function
     }
 }
 
+
+
+function add(){
+        var allMenu=document.createElement("div");
+        allMenu.classList.add("allmenu");
+        var menu= document.getElementById("menu");
+        menu.appendChild(allMenu);
+        var cerrar=document.createElement("h3");
+        cerrar.textContent="Cerrar";
+        cerrar.classList.add("lima");
+        allMenu.appendChild(cerrar);
+        cerrar.addEventListener("click",function(){
+        menu.removeChild(allMenu);
+
+
+        })
+
+
+
+      }
+
+
 google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawStuff);
 
@@ -32,12 +54,12 @@ google.charts.load('current', {'packages':['bar']});
 
         var options = {
           width: 350,
-          height:300,
+          height:200,
           legend: { position: 'none' },
           
           axes: {
             x: {
-              0: { side: 'buttom', label: 'White to move'} // Top x-axis.
+              0: { side: 'buttom', label: ''} // Top x-axis.
             }
           },
           bar: { groupWidth: "60%" }
@@ -47,3 +69,4 @@ google.charts.load('current', {'packages':['bar']});
         // Convert the Classic options to Material options.
         chart.draw(data, google.charts.Bar.convertOptions(options));
       };
+
