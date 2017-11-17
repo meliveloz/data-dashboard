@@ -1,42 +1,49 @@
-google.charts.load('current', {packages: ['corechart', 'bar']});
-google.charts.setOnLoadCallback(drawBasic);
+window.onscroll = function() {myFunction()}; //Quiere decir que cuando se hace scroll en la ventana entonces se va a ejecutar my function.
 
-function drawBasic() {
+function myFunction() { //y este es my function
+    if (document.body.scrollTop >0 || document.documentElement.scrollTop > 0) { //si el scrolltop es mayor a cero entonces voy a cambien la class del nav a nav2
+      var nav=document.getElementById("nav");
+        nav.classList ="nav2";
+        var logo=document.getElementById("logo");
+        logo.classList="logo2"
+        var user=document.getElementById("user-img");   //se mostrará la foto del usuario que anteriormente se encuentra visibility:hidden(escondido) en el html.
+        document.getElementById("user-img").classList="user2";
 
-      var data = new google.visualization.DataTable();
-      data.addColumn('timeofday', 'Time of Day');
-      data.addColumn('number', 'Motivation Level');
+    }else{
+    document.getElementById("nav").className=""; //para cuando vuelvo al scroll=0 , vuelve al menú original
+    document.getElementById("user-img").classList.toggle("user");
+    document.getElementById("user-img").classList.remove("user2"); //vuelvo a eliminar esta clase para que desaparezca la foto de usuario.
 
-      data.addRows([
-        [{v: [8, 0, 0], f: '8 am'}, 1],
-        [{v: [9, 0, 0], f: '9 am'}, 2],
-        [{v: [10, 0, 0], f:'10 am'}, 3],
-        [{v: [11, 0, 0], f: '11 am'}, 4],
-        [{v: [12, 0, 0], f: '12 pm'}, 5],
-        [{v: [13, 0, 0], f: '1 pm'}, 6],
-        [{v: [14, 0, 0], f: '2 pm'}, 7],
-        [{v: [15, 0, 0], f: '3 pm'}, 8],
-        [{v: [16, 0, 0], f: '4 pm'}, 9],
-        [{v: [17, 0, 0], f: '5 pm'}, 10],
-      ]);
-
-      var options = {
-        title: 'Motivation Level Throughout the Day',
-        hAxis: {
-          title: 'Sprints',
-          format: 'h:mm a',
-          viewWindow: {
-            min: [7, 30, 0],
-            max: [17, 30, 0]
-          }
-        },
-        vAxis: {
-          title: 'Rating (scale of 1-10)'
-        }
-      };
-
-      var chart = new google.visualization.ColumnChart(
-        document.getElementById('chart_div'));
-
-      chart.draw(data, options);
     }
+}
+
+google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Sprint', 'Students'],
+          ["Sprint 1", 120],
+          ["Sprint 2", 115],
+          ["Sprint 3", 110],
+          ["Sprint 4", 105],
+         
+        ]);
+
+        var options = {
+          width: 350,
+          height:300,
+          legend: { position: 'none' },
+          
+          axes: {
+            x: {
+              0: { side: 'buttom', label: 'White to move'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "60%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        // Convert the Classic options to Material options.
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      };

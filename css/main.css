@@ -64,3 +64,36 @@ li:hover{
 #menu{
 	background: #F5DA81;
 }
+.nav2{
+	background-color: grey; 
+	position: fixed;
+	height: 120px;
+	width: 100%;
+	z-index: 2000;
+	margin-top: 0;
+}
+
+.logo2{
+	margin-top: 1em;
+}
+
+
+
+.user{
+	width: 80px;
+	height: 80px;
+	text-align: none;
+	visibility: hidden;
+}
+
+.user2{
+	visibility: visible;
+	width: 80px;
+	height: 80px;
+	position: relative;
+    right: 28em;
+    top: 0.5em;
+}
+#top_x_div{
+	margin-left: 3em;
+}
