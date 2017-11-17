@@ -6,6 +6,7 @@ body{
 nav{
 	height: 100px;
 	text-align: center;
+	color:#3c4858;
 
 }
 
@@ -42,7 +43,6 @@ h1{
 	cursor: pointer;
 }
 .submenu ul li{
-
 	font-family: 'Montserrat', sans-serif;
 	list-style: none;
 	display: inline-block;
@@ -50,11 +50,17 @@ h1{
 	margin-left: 1em;
 }
 
+li:hover{
+	text-decoration:underline;
+	color: #ffc107;
+	cursor: pointer;
+}
+
+
 .logo{
 	padding: 1em;
 }
 
 #menu{
 	background: #F5DA81;
-
 }
