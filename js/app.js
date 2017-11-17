@@ -23,7 +23,7 @@ function drawBasic() {
       var options = {
         title: 'Motivation Level Throughout the Day',
         hAxis: {
-          title: 'Time of Day',
+          title: 'Sprints',
           format: 'h:mm a',
           viewWindow: {
             min: [7, 30, 0],
