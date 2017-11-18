@@ -3,10 +3,9 @@ body{
 	margin: 0;
 
 }
-nav{
+#nav{
 	height: 100px;
 	text-align: center;
-	color:#3c4858;
 
 }
 
@@ -43,6 +42,7 @@ h1{
 	cursor: pointer;
 }
 .submenu ul li{
+
 	font-family: 'Montserrat', sans-serif;
 	list-style: none;
 	display: inline-block;
@@ -60,10 +60,10 @@ li:hover{
 .logo{
 	padding: 1em;
 }
-
 #menu{
 	background: #F5DA81;
 }
+
 .nav2{
 	background-color: grey; 
 	position: fixed;
@@ -93,6 +93,8 @@ li:hover{
 	position: relative;
     right: 28em;
     top: 0.5em;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 #top_x_div{
 	margin-left: 4em;
@@ -131,15 +133,19 @@ h6{
 }
 .allmenu{
 	width: 400px;
-	height: 500px;
-	background: grey;
+	height: auto;
+	background: RGB(245,218, 129);opacity: 0.9;
 	z-index: 1000;
 	position: absolute;
 	top: 10em;
     left: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: 1px solid grey;
+    border-radius: 1.5em;
 }
 .lima{
-	margin-left: 17em;
+	margin-left: 16.5em;
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -151,3 +157,30 @@ h6{
 	margin-top: 0.5em;
 	margin-right: 0.5em;
 }
+
+.lista{
+	display: block;
+}
+
+.limamenu,.limatext1{
+	display: inline-block;
+}
+
+.title{
+	font-size: 1.5em;
+	margin-top: 1em;
+}
+
+.hr1{
+	height: 2px;
+   border: 0;
+   color: orange;
+   background-color:orange;
+	width: 250px;
+	margin-left: 0;
+}
+
+.sedes{
+	list-style: none;
+}
+
