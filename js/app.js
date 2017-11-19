@@ -8,14 +8,40 @@ function myFunction() { //y este es my function
         logo.classList="logo2";
         var user=document.getElementById("user-img");   //se mostrará la foto del usuario que anteriormente se encuentra visibility:hidden(escondido) en el html.
         document.getElementById("user-img").classList="user2";
+        var dataUser=document.getElementById("datauser");
+        document.getElementById("datauser").classList="datauservisible";
+        
 
     }else{
-    document.getElementById("nav").className=""; //para cuando vuelvo al scroll=0 , vuelve al menú original
+   document.getElementById("nav").className=""; //para cuando vuelvo al scroll=0 , vuelve al menú original
     document.getElementById("user-img").classList.toggle("user");
     document.getElementById("user-img").classList.remove("user2"); //vuelvo a eliminar esta clase para que desaparezca la foto de usuario.
-
+   document.getElementById("datauser").classList.toggle("datauserhidden");
+   document.getElementById("datauser").classList.remove("datauservisible");
+    
     }
 }
+
+
+function add2(){
+document.getElementById("lenguajecont").classList.toggle("lenguajelist2");
+document.getElementById("icondown").classList.toggle("fa-chevron-down");
+document.getElementById("icondown").classList.toggle("fa-times");
+
+
+
+
+}
+
+function add3(){
+document.getElementById("baricon").classList.toggle("barmenu2");
+
+
+
+}
+
+
+
 
 
 
@@ -425,6 +451,10 @@ function add(){
       }
 
 
+  
+
+
+
 
 google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawStuff);
@@ -456,4 +486,7 @@ google.charts.load('current', {'packages':['bar']});
         // Convert the Classic options to Material options.
         chart.draw(data, google.charts.Bar.convertOptions(options));
       };
+
+
+
 

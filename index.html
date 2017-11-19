@@ -10,8 +10,25 @@
   <body id="body1">
     <nav id="nav">
       <img id="user-img" class="user" src="assets/images/valentina2.png">
+      <div id="datauser" class="datauserhidden">
+      <h5 class="dataname">Valentina Smith</h6>
+      <h6 class="datawork">Training Manager</h6>
+      </div>
       <img  height="56px" width="190px" id="logo" src="assets/images/logo-laboratoria.svg">
-      <i class="fa fa-bars" aria-hidden="true"></i>
+      <span  class="lenguaje" onclick="add2()">Lenguaje<i id="icondown" class="fa fa-chevron-down" aria-hidden="true"></i></span>
+      <ul id="lenguajecont" class="lenguajelist">
+        <li class="idiomas"><a class="links" href="#" target="_blank">Español</a></li>
+        <li class="idiomas"><a class="links" href="#" target="_blank">Ingles</a></li>
+        <li class="idiomas"><a class="links" href="#" target="_blank">Portugues</a></li>
+      </ul>
+      <i class="fa fa-bars" aria-hidden="true" onclick="add3()" ></i>
+       <ul id="baricon" class="barmenu">
+          <li class="barlist"><a class="links">OVERVIEW</a></li>
+          <li class="barlist"><a href="slider.html" class="links">STUDENTS</a></li>
+          <li class="barlist"><a class="links">TEACHERS</a></li>
+          <li class="barlist"><a class="links">CERRAR SESIÓN</a></li>
+        </ul>
+
     </nav>
     <section id="menu">
       <div  class="sede">
@@ -21,7 +38,7 @@
       <div class="submenu">
         <ul>
           <li><a>OVERVIEW</a></li>
-          <li><a>STUDENTS</a></li>
+          <li><a href="slider.html">STUDENTS</a></li>
           <li><a>TEACHERS</a></li>
         </ul>
 
