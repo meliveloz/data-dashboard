@@ -10,7 +10,7 @@ function myFunction() { //y este es my function
         document.getElementById("user-img").classList="user2";
         var dataUser=document.getElementById("datauser");
         document.getElementById("datauser").classList="datauservisible";
-        
+
 
     }else{
    document.getElementById("nav").className=""; //para cuando vuelvo al scroll=0 , vuelve al menú original
@@ -18,7 +18,7 @@ function myFunction() { //y este es my function
     document.getElementById("user-img").classList.remove("user2"); //vuelvo a eliminar esta clase para que desaparezca la foto de usuario.
    document.getElementById("datauser").classList.toggle("datauserhidden");
    document.getElementById("datauser").classList.remove("datauservisible");
-    
+
     }
 }
 
@@ -50,7 +50,7 @@ document.getElementById("baricon").classList.toggle("barmenu2");
 function add(){
 
 
-  
+
         var allMenu=document.createElement("div");
         allMenu.classList.add("allmenu");
         var menu= document.getElementById("menu");
@@ -81,7 +81,7 @@ function add(){
         allMenu.appendChild(hr1);
 
         limaMenu.addEventListener("click",function(){
-          
+
 
           var contLima= document.createElement("ul");
           contLima.classList.add("contlima","contenedor-lista");
@@ -93,7 +93,7 @@ function add(){
           var limatext1=document.createTextNode("2015 - I");
           listaLima1.appendChild(checkLima1);
           listaLima1.appendChild(limatext1);
-         
+
            var checkLima2=document.createElement("input");
           checkLima2.type="checkbox";
           checkLima2.classList.add("check");
@@ -144,7 +144,7 @@ function add(){
           listaLima6.appendChild(checkLima6);
           listaLima6.appendChild(limatext6);
 
-          
+
 
           contLima.appendChild(listaLima1);
           contLima.appendChild(listaLima2);
@@ -161,7 +161,7 @@ function add(){
 
 
 
-      
+
 
         var lista2=document.createElement("li");
         lista2.classList.add("lista");
@@ -193,7 +193,7 @@ function add(){
           var arequipaText1=document.createTextNode("2015 - I");
           listaArequipa1.appendChild(checkArequipa1);
           listaArequipa1.appendChild(arequipaText1);
-         
+
            var checkArequipa2=document.createElement("input");
           checkArequipa2.type="checkbox";
           checkArequipa2.classList.add("check");
@@ -235,20 +235,20 @@ function add(){
 
 
 
-       
 
-          
+
+
 
           contArequipa.appendChild(listaArequipa1);
           contArequipa.appendChild(listaArequipa2);
           contArequipa.appendChild(listaArequipa3);
           contArequipa.appendChild(listaArequipa4);
           contArequipa.appendChild(listaArequipa5);
-        
+
           allMenu.appendChild(contArequipa);
 
            allMenu.insertBefore(contArequipa,lista3);
-          
+
 
 
 
@@ -285,7 +285,7 @@ function add(){
           var santiText1=document.createTextNode("2015 - I");
           listaSanti1.appendChild(checkSanti1);
           listaSanti1.appendChild(santiText1);
-         
+
            var checkSanti2=document.createElement("input");
           checkSanti2.type="checkbox";
           checkSanti2.classList.add("check");
@@ -334,9 +334,9 @@ function add(){
           listaSanti6.appendChild(checkSanti6);
           listaSanti6.appendChild(santitext6);
 
-       
 
-          
+
+
 
           contSanti.appendChild(listaSanti1);
           contSanti.appendChild(listaSanti2);
@@ -344,7 +344,7 @@ function add(){
           contSanti.appendChild(listaSanti4);
           contSanti.appendChild(listaSanti5);
           contSanti.appendChild(listaSanti6);
-        
+
           allMenu.appendChild(contSanti);
 
           allMenu.insertBefore(contSanti,lista4);
@@ -381,7 +381,7 @@ function add(){
           var mexText1=document.createTextNode("2015 - I");
           listaMex1.appendChild(checkMex1);
           listaMex1.appendChild(mexText1);
-         
+
            var checkMex2=document.createElement("input");
           checkMex2.type="checkbox";
           checkMex2.classList.add("check");
@@ -423,16 +423,16 @@ function add(){
 
 
 
-       
 
-          
+
+
 
           contMex.appendChild(listaMex1);
           contMex.appendChild(listaMex2);
           contMex.appendChild(listaMex3);
           contMex.appendChild(listaMex4);
           contMex.appendChild(listaMex5);
-        
+
           allMenu.appendChild(contMex);
 
         })
@@ -451,12 +451,12 @@ function add(){
       }
 
 
-  
 
 
 
 
-google.charts.load('current', {'packages':['bar']});
+
+/*grafico 1*/google.charts.load('current', {'packages':['bar']});/*grafico 1*/
       google.charts.setOnLoadCallback(drawStuff);
 
       function drawStuff() {
@@ -466,14 +466,14 @@ google.charts.load('current', {'packages':['bar']});
           ["Sprint 2", 115],
           ["Sprint 3", 110],
           ["Sprint 4", 105],
-         
+
         ]);
 
         var options = {
           width: 350,
           height:200,
           legend: { position: 'none' },
-          
+
           axes: {
             x: {
               0: { side: 'buttom', label: ''} // Top x-axis.
@@ -485,8 +485,58 @@ google.charts.load('current', {'packages':['bar']});
         var chart = new google.charts.Bar(document.getElementById('top_x_div'));
         // Convert the Classic options to Material options.
         chart.draw(data, google.charts.Bar.convertOptions(options));
-      };
+
+        /*grafico 2*/ google.charts.load('current', {'packages':['corechart']});  /*grafico 2*/
+              google.charts.setOnLoadCallback(drawChart);
+
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Director',  '#135'],
+                  [' ',  ,],
+                  ['Sprint 1', 105,   ],
+                  ['Sprint 2',     45, ],
+                  ['Sprint 3',        75,  ],
+                  ['Sprint 4',      105,    ],
+                  [' ',  ,]
+                ]);
+
+                var options = {
+                  title: '#105 STUDENTS THAT MEET THE TARGET',
+
+                  isStacked: true
+                };
+
+                var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div'));
+
+                  chart.draw(data, options);
 
 
 
 
+          /*grafico 3*/google.charts.load('current', {'packages':['corechart']});  /*grafico 3*/
+                        google.charts.setOnLoadCallback(drawChart);
+
+                        function drawChart() {
+                          var data = google.visualization.arrayToDataTable([
+                            ['sprint',  '#105'],
+                            [' ',  ,],
+                            ['Sprint 1', 14,   ],
+                            ['Sprint 2', 10, ],
+                            ['Sprint 3', 30,  ],
+                            ['Sprint 4',  81,    ],
+                            [' ',  ,]
+                          ]);
+
+                          var options = {
+                            title:'% ACUMULATIVE NPS',
+
+                            isStacked: true
+                          };
+
+                          var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div1'));
+
+                            chart.draw(data, options);
+
+                      }
+                    }
+                  };
