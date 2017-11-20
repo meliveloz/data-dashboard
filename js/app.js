@@ -537,6 +537,226 @@ function add(){
 
                             chart.draw(data, options);
 
+
+
+      /*Grafico 4*/google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+  var data = google.visualization.arrayToDataTable([
+    ['Sprint', '% Common Core', '% Students Javascript ', ' % Students UX Desing '],
+    ["Sprint 1", 30, 34, 37.4 ],
+    ["Sprint 2", 44.4, 46, 48.7],
+    ["Sprint 3", 51, 53, 55],
+    ["Sprint 4", 71, 73.5, 78],
+    ["Sprint 5", 78, 60, 82.6],
+    ["Sprint 6", 73, 72,69],
+    ["Sprint 7", 69, 69,57],
+    ["Sprint 8", 47, 45,42.1],
+    ]);
+
+      var options = {
+        title: '62 (% Of TOTAL #135)',
+
+        hAxis: {
+          title: '',
+          format: 'h:mm a',
+          viewWindow: {
+            min: [7, 30, 0],
+            max: [17, 30, 0]
+          }
+        },
+        vAxis: {
+          title: ''
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div2'));
+
+        chart.draw(data, options);
+
+
+
+  /*grafico 5*/ google.charts.load('current', {'packages':['corechart']});/*grafico 5*/
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['# STUDENTS THAT MEET THE TARGET',  90],
+          ['# STUDENTS THAT DON´T MEET THE TARGET', 45],
+
+        ]);
+
+        var options = {
+          title: 'Tech Skills'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+
+
+
+/*garfico 6*/ google.charts.load('current', {packages: ['corechart', 'bar']});/*garfico 6*/
+  google.charts.setOnLoadCallback(drawBasic);
+
+  function drawBasic() {
+
+    var data = google.visualization.arrayToDataTable([
+      ['Sprint', '# HSE'],
+      ["Sprint 1",77],
+      ["Sprint 2", 79],
+      ["Sprint 3", 78],
+      ["Sprint 4", 81.3],
+
+      ]);
+
+        var options = {
+          title: '62  # Of STUDENTS THAT MEET THE TARGET',
+
+          hAxis: {
+            title: '',
+            format: 'h:mm a',
+            viewWindow: {
+              min: [7, 30, 0],
+              max: [17, 30, 0]
+            }
+          },
+          vAxis: {
+            title: ''
+          }
+        };
+
+        var chart = new google.visualization.ColumnChart(
+          document.getElementById('chart_div3'));
+
+          chart.draw(data, options);
+
+
+/*grafico 7*/ google.charts.load('current', {'packages':['corechart']});/*grafico 7*/
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+          var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['# STUDENTS THAT MEET THE TARGET',  62],
+            ['# STUDENTS THAT DON´T MEET THE TARGET', 73],
+
+          ]);
+
+          var options = {
+            title: 'Life Skills'
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+          chart.draw(data, options);
+
+
+  /*grafico 8*/google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawBackgroundColor);
+
+function drawBackgroundColor() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Sprint');
+      data.addColumn('number', 'SAT %');
+
+      data.addRows([
+        [" ", ,],
+        ["sprint 1", 48.3],
+        ["sprint 2", 24.1],
+        ["sprint 3", 45.2],
+        ["sprint 4", 48.3],
+        [" ", ,],
+        ]);
+
+      var options = {
+        hAxis: {
+          title: ''
+        },
+        vAxis: {
+          title: ''
+        },
+        backgroundColor: '#f1f8e9'
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div4'));
+      chart.draw(data, options);
+
+
+
+/*grafico 9*/ google.charts.load('current', {packages: ['corechart', 'line']});/*grafico 9*/
+      google.charts.setOnLoadCallback(drawBackgroundColor);
+
+      function drawBackgroundColor() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Sprint');
+            data.addColumn('number', 'Rating  %');
+
+            data.addRows([
+              [" ", ,],
+              ["sprint 1", 15],
+              ["sprint 2", 7],
+              ["sprint 3", 17],
+              ["sprint 4", 18],
+              [" ", ,],
+              ]);
+
+            var options = {
+              hAxis: {
+                title: ''
+              },
+              vAxis: {
+                title: ''
+              },
+              backgroundColor: '#f1f8e9'
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div5'));
+            chart.draw(data, options);
+
+
+  /*grafico 10*/ google.charts.load('current', {packages: ['corechart', 'line']});/*grafico 10*/
+                  google.charts.setOnLoadCallback(drawBackgroundColor);
+
+                  function drawBackgroundColor() {
+                        var data = new google.visualization.DataTable();
+                        data.addColumn('string', 'Sprint');
+                        data.addColumn('number', 'Rating  %');
+
+                        data.addRows([
+                          [" ", ,],
+                          ["sprint 1", 41],
+                          ["sprint 2", 26],
+                          ["sprint 3", 45],
+                          ["sprint 4", 50],
+                          [" ", ,],
+                          ]);
+
+                        var options = {
+                          hAxis: {
+                            title: ''
+                          },
+                          vAxis: {
+                            title: ''
+                          },
+                          backgroundColor: '#f1f8e9'
+                        };
+
+                        var chart = new google.visualization.LineChart(document.getElementById('chart_div6'));
+                        chart.draw(data, options);
                       }
                     }
-                  };
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    };

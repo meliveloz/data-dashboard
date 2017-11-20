@@ -364,3 +364,143 @@ padding: 3px;
 	position: relative;
 	bottom:  1029px;
 	}
+
+
+.selector{
+	position: relative;
+	bottom: 900px;
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+	color: #C3C3C3;
+}
+
+a:hover{
+	text-decoration: underline;
+	color:#ffc107;
+}
+
+#chart_div2{
+	position:relative;
+	bottom: 800px;
+}
+
+.tech{
+	background-color: #C3C3C3;
+	width: 200px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+ position:relative;
+ bottom: 780px;
+ left: 250px;
+}
+
+#piechart{
+	position: relative;
+	left:650px;
+	bottom: 1150px;
+}
+
+.selector2{
+	position: relative;
+	bottom: 1070px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.overall{
+	background-color: #C3C3C3;
+	width: 170px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+ position:relative;
+ bottom: 980px;
+ padding: 1px;
+ left: 250px;
+}
+
+#chart_div3{
+	position:relative;
+	bottom: 990px;
+}
+
+#piechart2{
+	position: relative;
+	left:650px;
+	bottom: 1340px;
+}
+
+
+.title{
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	bottom: 1300px;
+	text-align: left;
+	left: -70px;
+}
+
+.SAT{
+	background-color: #C3C3C3;
+	width: 200px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+  position:relative;
+ bottom: 1295px;
+  padding: 1px;
+  left: 50px;
+}
+
+#chart_div4{
+	position: relative;
+left: 30px;
+	bottom: 1300px;
+}
+
+
+.title2{
+	position: relative;
+	bottom: 1690px;
+	left: 499px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.SAT2{
+	background-color: #C3C3C3;
+	width: 200px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+  position:relative;
+  bottom: 1685px;
+  padding: 1px;
+  left: 500px;
+}
+
+#chart_div5{
+	position: relative;
+  left: 470px;
+	bottom: 1692px;
+}
+
+.title3{
+	position: relative;
+	bottom: 2083px;
+	left: 930px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.SAT3{
+	background-color: #C3C3C3;
+	width: 200px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+  position:relative;
+  bottom: 2079px;
+  padding: 1px;
+  left: 930px;
+}
+
+#chart_div6{
+	position: relative;
+  left: 910px;
+	bottom: 2083px;
+}
