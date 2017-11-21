@@ -39,9 +39,98 @@ document.getElementById("baricon").classList.toggle("barmenu2");
 
 
 }
+function studentpluss(){
+var menu=document.getElementById("menu");
+var contEstudent=document.createElement("div");
+contEstudent.classList.add("contestudent");
+
+var nameStudent=document.createElement("input");
+nameStudent.classList.add("namestudent");
+nameStudent.placeholder="Student Name";
+var nameButton=document.createElement("button");
+nameButton.classList.add("namebutton");
+nameButton.textContent="Save";
+var codeStudent=document.createElement("input");
+codeStudent.classList.add("codestudent");
+codeStudent.placeholder="Code Student";
+var codeButton=document.createElement("button");
+codeButton.classList.add("codebutton");
+codeButton.textContent="Save";
+var icon=document.createElement("i");
+icon.classList.add("fa", "fa-times", "close");
+contEstudent.appendChild(nameStudent);
+contEstudent.appendChild(nameButton);
+contEstudent.appendChild(codeStudent);
+contEstudent.appendChild(codeButton);
+contEstudent.appendChild(icon);
+
+menu.appendChild(contEstudent);
+
+
+nameButton.addEventListener("click",function(){
+nameStudent.value="";
+
+})
+
+codeButton.addEventListener("click",function(){
+codeStudent.value="";
+
+})
+
+icon.addEventListener("click",function(){
+ menu.removeChild(contEstudent);
+
+})
+
+}
 
 
 
+function studentremove(){
+var menu=document.getElementById("menu");
+var contEstudent=document.createElement("div");
+contEstudent.classList.add("contestudent");
+
+var nameStudent=document.createElement("input");
+nameStudent.classList.add("namestudent");
+nameStudent.placeholder="Student Name";
+var nameButton=document.createElement("button");
+nameButton.classList.add("namebutton");
+nameButton.textContent="Remove";
+var codeStudent=document.createElement("input");
+codeStudent.classList.add("codestudent");
+codeStudent.placeholder="Code Student";
+var codeButton=document.createElement("button");
+codeButton.classList.add("codebutton");
+codeButton.textContent="Remove";
+var icon=document.createElement("i");
+icon.classList.add("fa", "fa-times", "close");
+contEstudent.appendChild(nameStudent);
+contEstudent.appendChild(nameButton);
+contEstudent.appendChild(codeStudent);
+contEstudent.appendChild(codeButton);
+contEstudent.appendChild(icon);
+
+menu.appendChild(contEstudent);
+
+
+nameButton.addEventListener("click",function(){
+nameStudent.value="";
+
+})
+
+codeButton.addEventListener("click",function(){
+codeStudent.value="";
+
+})
+
+icon.addEventListener("click",function(){
+ menu.removeChild(contEstudent);
+
+})
+
+
+}
 
 
 
@@ -67,7 +156,7 @@ function add(){
         limaMenu.type="checkbox";
         allMenu.appendChild(limaMenu);
         var limaText1=document.createElement("span");
-        limaText1.classList.add("limatext1","title");
+        limaText1.classList.add("limatext1","titlelima");
         limaText1.textContent="Lima";
         lista.appendChild(limaMenu);
         lista.appendChild(limaText1);
@@ -170,7 +259,7 @@ function add(){
         arequipaMenu.type="checkbox";
         allMenu.appendChild(arequipaMenu);
         var limaText2=document.createElement("span");
-        limaText2.classList.add("limatext1","title");
+        limaText2.classList.add("limatext1","titlelima");
         limaText2.textContent="Arequipa";
         lista2.appendChild(arequipaMenu);
         lista2.appendChild(limaText2);
@@ -262,7 +351,7 @@ function add(){
         santiMenu.type="checkbox";
         allMenu.appendChild(santiMenu);
         var santiText3=document.createElement("span");
-        santiText3.classList.add("limatext1","title");
+        santiText3.classList.add("limatext1","titlelima");
         santiText3.textContent="Santiago de Chile";
         lista3.appendChild(santiMenu);
         lista3.appendChild(santiText3);
@@ -358,7 +447,7 @@ function add(){
         mexMenu.type="checkbox";
         allMenu.appendChild(mexMenu);
         var mexText4=document.createElement("span");
-        mexText4.classList.add("limatext1","title");
+        mexText4.classList.add("limatext1","titlelima");
         mexText4.textContent="Ciudad de México";
         lista4.appendChild(mexMenu);
         lista4.appendChild(mexText4);

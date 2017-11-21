@@ -178,7 +178,7 @@ h6{
 	display: inline-block;
 }
 
-.title{
+.titlelima{
 	font-size: 1.5em;
 	margin-top: 1em;
 }
@@ -503,4 +503,41 @@ left: 30px;
 	position: relative;
   left: 910px;
 	bottom: 2083px;
+}
+.studentmenu{
+	position: absolute;
+	top: 7.3em;
+    left: 70em;
+	z-index: 1000;
+
+}
+.studentspan{
+	color:grey;
+	font-size: 0.8em;
+	display: block;
+	margin-bottom: 2em;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+
+}
+.fa-user-plus, .fa-user-times{
+	margin-right: 1em;
+	font-size: 1.5em;
+
+}
+
+.contestudent{
+	position: absolute;
+    background: #D5D3D3;
+    left: 70em;
+    z-index: 2000;
+    bottom: 27em;
+
+}
+.namestudent,.codestudent{
+	display: block;
+}
+
+.close{
+	margin-left: 5.6em;
 }
