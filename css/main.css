@@ -555,14 +555,14 @@ left: 30px;
 
 }
 .techstyle2{
-	
+
 	display: inline-block;
     top: 42.5em;
     left: 14em;
     z-index: 1000;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-  
+
 }
 .techstyle2 h2,.techstyle h5{
 	border: 1px solid black;
@@ -601,4 +601,77 @@ left: 30px;
 }
 .hsestyle2 h2:hover,.hsestyle2 h5:hover{
 	background: #F8D42C;
+}
+
+footer{
+	margin: 0px;
+	background-color:gray;
+	height: 400px;
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.huno,.hdos{
+	/*background-color: red;*/
+	display: inline-block;
+	margin-left: 200px;
+	margin-top: 70px;
+	color: #F5DA81;
+}
+
+p{
+	width: 300px;
+	color: white;
+	margin-left: 200px;
+}
+
+.mail{
+	margin-left: 520px;
+	position: relative;
+	bottom: 50px;
+}
+
+input{
+background-color:transparent;
+width: 400px;
+height: 50px;
+border-right-color:transparent;
+border-left-color: transparent;
+border-top-color: transparent;
+border-bottom-color: #F5DA81;
+outline-style: none;
+border-radius: 6px;
+}
+
+button{
+	padding: 5px;
+	width: 60px;
+	height: 55px;
+	background-color: transparent;
+	border-color: #F5DA81;
+	outline-style: none;
+}
+
+.fa-caret-right{
+	font-size: 20px;
+	color: #F5DA81;
+}
+.cont{
+	text-align: center;
+	font-size: 25px;
+	line-height: 30px;
+	position: relative;
+	bottom: 80px;
+}
+
+h5{
+	color:  #F5DA81;
+}
+
+.redes{
+	color: white;
+	font-size: 40px;
+}
+.redes:hover{
+	color: #F5DA81;
 }
