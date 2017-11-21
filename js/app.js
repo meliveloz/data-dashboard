@@ -550,7 +550,7 @@ google.charts.setOnLoadCallback(drawStuff);
 function drawStuff() {
         var data = new google.visualization.arrayToDataTable([
           ['Sprint', 'Students'],
-          ["Sprint 1", 120],
+          ["Sprint 1", 135],
           ["Sprint 2", 115],
           ["Sprint 3", 110],
           ["Sprint 4", 105],
