@@ -5,13 +5,19 @@
 <style>
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;margin:0}
-.mySlides {display:none}
+.mySlides {display:none;}
+body{
+  background: #FFE4AA
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 900px;
+  max-width: 200px;
   position: relative;
   margin: auto;
+  margin-top: 7em;
+  right: 16em;
+  
 }
 
 /* Next & previous buttons */
@@ -24,7 +30,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   margin-top: -22px;
   color: #F8AF30;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
@@ -118,6 +124,41 @@ body {font-family: Verdana,sans-serif;margin:0}
   cursor: pointer;
   color:blue;
 }
+
+.descrip{
+    position: absolute;
+    color: orange;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    background: rgba(18, 46, 58, 0.52);
+    width: 300px;
+    height: auto;
+    border-radius: 2em;
+    border: 2px solid white;
+    top: 3em;
+    left: 20em;
+}
+.descrip h2 {
+  color:white;
+}
+.descrip h3{
+  cursor: pointer;
+}
+.descrip h4{
+  cursor:pointer;
+  color: white;
+}
+.descrip:hover{
+  background: #B4B4B4;
+}
+.photo{
+  border-radius: 15%;
+}
+.descrip h4:hover{
+  color:orange;
+
+}
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -135,44 +176,52 @@ body {font-family: Verdana,sans-serif;margin:0}
 </style>
 </head>
 <body>
+  
+<img class="logolab" src="assets/images/logo-laboratoria.svg">
 
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 6</div>
-  <img src="assets/images/belen.png" style="width:900px;height:600px;">
+  <img  class="photo" src="assets/images/belen2.png" style="width:200px;height:250px;">
   <img class="logolab" src="assets/images/logo-laboratoria.svg">
+  <div class="descrip"><h2>Teacher: Belén</h2> <h3>belen@laboratoria.la</h3><h4>see more.</h4></div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 6</div>
-  <img src="assets/images/marcia.png" style="width:900px;height:600px;">
+  <img class="photo" src="assets/images/marcia2.png" style="width:200px;height:250px;">
   <img class="logolab" src="assets/images/logo-laboratoria.svg">
+   <div class="descrip"><h2>Teacher: Marcia</h2> <h3>marcia@laboratoria.la</h3><h4>see more.</h4></div>
 
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 6</div>
-  <img src="assets/images/fabian.png" style="width:900px;height:600px;">
+  <img class="photo" src="assets/images/fabian2.png" style="width:200px;height:250px;">
   <img class="logolab" src="assets/images/logo-laboratoria.svg">
+   <div class="descrip"><h2>Teacher: Fabián</h2> <h3>fabian@laboratoria.la</h3><h4>see more.</h4></div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4/ 6</div>
-  <img src="assets/images/allison.png" style="width:900px;height:600px;">
+  <img class="photo" src="assets/images/allison2.png" style="width:200px;height:250px;">
   <img class="logolab" src="assets/images/logo-laboratoria.svg">
+   <div class="descrip"><h2>Teacher: Allison</h2> <h3>allison@laboratoria.la</h3><h4>see more.</h4></div>
 
 </div>
 <div class="mySlides fade">
   <div class="numbertext">5 / 6</div>
-  <img src="assets/images/alexandra.png" style="width:900px;height:600px;">
+  <img class="photo" src="assets/images/alexandra2.png" style="width:200px;height:250px;">
   <img class="logolab" src="assets/images/logo-laboratoria.svg">
+  <div class="descrip"><h2>Teacher: Alexandra</h2> <h3>alexandra@laboratoria.la</h3><h4>see more.</h4></div>
 
 </div>
 <div class="mySlides fade">
   <div class="numbertext">6/ 6</div>
-  <img src="assets/images/nadia.png" style="width:900px;height:600px;">
+  <img class="photo" src="assets/images/nadia2.png" style="width:200px;height:250px;">
   <img class="logolab" src="assets/images/logo-laboratoria.svg">
+  <div class="descrip"><h2>Teacher: Nadia</h2> <h3>nadia@laboratoria.la</h3><h4>see more.</h4></div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -181,7 +230,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 </div>
 <br>
 
-<div style="text-align:center">
+<div style="text-align:left;margin-left: 22em;">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
@@ -217,7 +266,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
 </script>
 
 </body>
-</html> 
+</html>

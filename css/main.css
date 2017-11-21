@@ -3,8 +3,9 @@ body{
 
 }
 html{
-	  overflow-x: hidden;
+	overflow-x: hidden;
     width: 100vw;
+
 }
 #nav{
 	height: 100px;
@@ -631,7 +632,7 @@ p{
 	bottom: 50px;
 }
 
-input{
+.inputfooter{
 background-color:transparent;
 width: 400px;
 height: 50px;
@@ -643,7 +644,7 @@ outline-style: none;
 border-radius: 6px;
 }
 
-button{
+.buttonfooter{
 	padding: 5px;
 	width: 60px;
 	height: 55px;
@@ -664,7 +665,7 @@ button{
 	bottom: 80px;
 }
 
-h5{
+.cont h5{
 	color:  #F5DA81;
 }
 
