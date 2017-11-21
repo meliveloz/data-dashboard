@@ -51,12 +51,15 @@ body {font-family: Verdana,sans-serif;margin:0}
     left: 45em;
     width: 100%;
     text-align: center;
-    background: grey;
+    background: rgba(18, 46, 58, 0.52);
     width: 300px;
     height: auto;
-    border-radius: 1em;
+    border-radius: 2em;
+    border: 2px solid white;
 }
-
+.text:hover{
+  background:rgba(203, 203, 203, 0.52);
+}
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -93,12 +96,15 @@ body {font-family: Verdana,sans-serif;margin:0}
   position: absolute;
   bottom: 26em;
   left: 1em;
+  background: orange;
+  border-radius: 50%;
 }
 .logos{
   position:absolute;
   width: 10%;
   bottom: 27em;
   left: 48em;
+
 }
 .logolab{
   position: absolute;
@@ -113,11 +119,91 @@ body {font-family: Verdana,sans-serif;margin:0}
   position: absolute;
   bottom: 26em;
   left: 14em;
+  border-radius: 50%;
+  background: orange;
 }
 .link{
   cursor: pointer;
   color:blue;
 }
+.techskill{
+  position: absolute;
+  color: orange;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  background: rgba(18, 46, 58, 0.52);
+  width: 100px;
+  height: auto;
+  border-radius: 2em;
+  border: 2px solid white;
+  top: 11em;
+  left: 48em;
+
+}
+.techskill span{
+  margin-top: 1em;
+  display: block;
+  font-size: 1.5em;
+}
+.techskill h6{
+margin-top: 0;
+font-size: 1em;
+}
+.lifeskill{
+  position: absolute;
+  color: orange;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  background: rgba(18, 46, 58, 0.52);
+  width: 100px;
+  height: auto;
+  border-radius: 2em;
+  border: 2px solid white;
+  top: 11em;
+  left: 55em;
+
+}
+.lifeskill span{
+  margin-top: 1em;
+  display: block;
+  font-size: 1.5em;
+}
+.lifeskill h6{
+margin-top: 0;
+font-size: 1em;
+}
+.engskill{
+  position: absolute;
+  color: orange;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  background: rgba(18, 46, 58, 0.52);
+  width: 120px;
+  height: auto;
+  border-radius: 2em;
+  border: 2px solid white;
+  top: 18.5em;
+  left: 50em;
+
+}
+
+.engskill:hover,.lifeskill:hover,.techskill:hover{
+  background: rgba(203, 203, 203, 0.52);
+}
+.engskill span{
+  margin-top: 1em;
+  display: block;
+  font-size: 1em;
+}
+.engskill h6{
+margin-top: 0;
+font-size: 0.7em;
+}
+
+
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -133,6 +219,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   .prev, .next,.text {font-size: 11px}
 }
 </style>
+
 </head>
 <body>
 
@@ -142,6 +229,9 @@ body {font-family: Verdana,sans-serif;margin:0}
   <div class="numbertext">1 / 6</div>
   <img src="assets/images/students/1.jpeg" style="width:1000px;height:600px;">
   <div class="text"><span>Valentina Rojas</span> <h5>Frontend Developer</h5><span class="link">Ver más</span></div>
+  <div class="techskill"><span>95%</span><h6>Tech Skill</h6></div>
+  <div class="lifeskill"><span>100%</span><h6>Life Skill</h6></div>
+  <div class="engskill"><span>Advanced</span><h6>English Skill</h6></div>
   <img class="premios" src="assets/images/students/5mejores.png">
   <img class="premios2" src="assets/images/students/proactiva.png">
   <img  class="logos" src="assets/images/students/HTML5_CSS_JavaScript.png">
@@ -151,7 +241,10 @@ body {font-family: Verdana,sans-serif;margin:0}
 <div class="mySlides fade">
   <div class="numbertext">2 / 6</div>
   <img src="assets/images/students/2.jpeg" style="width:1000px;height:600px;">
-   <div class="text"><span>Marcela Ponce</span> <h5>Frontend Developer</h5><span class="link">Ver más</span></div>
+  <div class="text"><span>Marcela Ponce</span> <h5>Frontend Developer</h5><span class="link">Ver más</span></div>
+  <div class="techskill"><span>90%</span><h6>Tech Skill</h6></div>
+  <div class="lifeskill"><span>89%</span><h6>Life Skill</h6></div>
+  <div class="engskill"><span>Interm</span><h6>English Skill</h6></div>
   <img class="premios" src="assets/images/students/5mejores.png">
   <img  class="logos" src="assets/images/students/HTML5_CSS_JavaScript.png">
   <img class="logolab" src="assets/images/logo-laboratoria.svg">
@@ -162,6 +255,9 @@ body {font-family: Verdana,sans-serif;margin:0}
   <div class="numbertext">3 / 6</div>
   <img src="assets/images/students/3.jpeg" style="width:1000px;height:600px;">
   <div class="text"><span>Lorena Henriquez</span> <h5>Frontend Developer</h5><span class="link">Ver más</span></div>
+  <div class="techskill"><span>96%</span><h6>Tech Skill</h6></div>
+  <div class="lifeskill"><span>93%</span><h6>Life Skill</h6></div>
+  <div class="engskill"><span>Basic</span><h6>English Skill</h6></div>
   <img class="premios" src="assets/images/students/5mejores.png">
   <img  class="logos" src="assets/images/students/HTML5_CSS_JavaScript.png">
   <img class="logolab" src="assets/images/logo-laboratoria.svg">
@@ -171,6 +267,9 @@ body {font-family: Verdana,sans-serif;margin:0}
   <div class="numbertext">4/ 6</div>
   <img src="assets/images/students/4.jpeg" style="width:1000px;height:600px;">
   <div class="text"><span>Bárbara nuñez</span> <h5>Frontend Developer</h5><span class="link">Ver más</span></div>
+  <div class="techskill"><span>95%</span><h6>Tech Skill</h6></div>
+  <div class="lifeskill"><span>100%</span><h6>Life Skill</h6></div>
+  <div class="engskill"><span>Advanced</span><h6>English Skill</h6></div>
   <img class="premios2" src="assets/images/students/proactiva.png">
   <img  class="logos" src="assets/images/students/HTML5_CSS_JavaScript.png">
   <img class="logolab" src="assets/images/logo-laboratoria.svg">
@@ -179,7 +278,10 @@ body {font-family: Verdana,sans-serif;margin:0}
 <div class="mySlides fade">
   <div class="numbertext">5 / 6</div>
   <img src="assets/images/students/5.jpeg" style="width:1000px;height:600px;">
-   <div class="text"><span>Luciana Soto</span> <h5>Frontend Developer</h5><span class="link">Ver más</span></div>
+  <div class="text"><span>Luciana Soto</span> <h5>Frontend Developer</h5><span class="link">Ver más</span></div>
+  <div class="techskill"><span>95%</span><h6>Tech Skill</h6></div>
+  <div class="lifeskill"><span>100%</span><h6>Life Skill</h6></div>
+  <div class="engskill"><span>Advanced</span><h6>English Skill</h6></div>
   <img class="premios" src="assets/images/students/5mejores.png">
   <img class="premios2" src="assets/images/students/proactiva.png">
   <img  class="logos" src="assets/images/students/HTML5_CSS_JavaScript.png">
@@ -189,7 +291,10 @@ body {font-family: Verdana,sans-serif;margin:0}
 <div class="mySlides fade">
   <div class="numbertext">6/ 6</div>
   <img src="assets/images/students/6.jpeg" style="width:1000px;height:600px;">
-   <div class="text"><span>Pamela Garrido</span> <h5>Frontend Developer</h5><span class="link">Ver más</span></div>
+  <div class="text"><span>Pamela Garrido</span> <h5>Frontend Developer</h5><span class="link">Ver más</span></div>
+  <div class="techskill"><span>95%</span><h6>Tech Skill</h6></div>
+  <div class="lifeskill"><span>100%</span><h6>Life Skill</h6></div>
+  <div class="engskill"><span>Advanced</span><h6>English Skill</h6></div>
   <img class="premios" src="assets/images/students/5mejores.png">
   <img  class="logos" src="assets/images/students/HTML5_CSS_JavaScript.png">
   <img class="logolab" src="assets/images/logo-laboratoria.svg">

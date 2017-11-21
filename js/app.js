@@ -539,10 +539,14 @@ function add(){
 
       }
 
+function add5(){
+  document.getElementById("techmenu").classList.toggle("techstyle2");
+}
 
 
-
-
+function add6(){
+  document.getElementById("hsemenu").classList.toggle("hsestyle2");
+}
 
 
 /*grafico 1*/google.charts.load('current', {'packages':['bar']});/*grafico 1*/

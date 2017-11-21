@@ -2,6 +2,10 @@ body{
 	margin: 0;
 
 }
+html{
+	  overflow-x: hidden;
+    width: 100vw;
+}
 #nav{
 	height: 100px;
 	text-align: center;
@@ -540,4 +544,61 @@ left: 30px;
 
 .close{
 	margin-left: 5.6em;
+}
+
+.techstyle{
+	display: none;
+	position: absolute;
+	width: auto;
+	height: auto;
+	background: #D7D7D7;
+
+}
+.techstyle2{
+	
+	display: inline-block;
+    top: 42.5em;
+    left: 14em;
+    z-index: 1000;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  
+}
+.techstyle2 h2,.techstyle h5{
+	border: 1px solid black;
+	margin:0;
+	padding:0;
+	cursor: pointer;
+}
+
+.techstyle2 h2:hover,.techstyle h5:hover{
+	background: #F8D42C;
+
+}
+
+.hsestyle{
+	display: none;
+	position: absolute;
+	width: 150px;
+	height: auto;
+	background: #D7D7D7;
+}
+
+.hsestyle2{
+	display: inline-block;
+	z-index: 1000;
+	font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    top: 91em;
+    left: 19em;
+}
+
+.hsestyle2 h2,.hsestyle2 h5{
+	border: 1px solid black;
+	margin:0;
+	padding:0;
+	cursor: pointer;
+}
+.hsestyle2 h2:hover,.hsestyle2 h5:hover{
+	background: #F8D42C;
 }
