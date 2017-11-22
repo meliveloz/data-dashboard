@@ -548,86 +548,86 @@ google.charts.load('current', {'packages':['bar']});/*grafico 1*/
 google.charts.setOnLoadCallback(drawStuff);
 
 function drawStuff() {
-        var data = new google.visualization.arrayToDataTable([
-          ['Sprint', 'Students'],
-          ["Sprint 1", 135],
-          ["Sprint 2", 115],
-          ["Sprint 3", 110],
-          ["Sprint 4", 105],
+  var data = new google.visualization.arrayToDataTable([
+    ['Sprint', 'Students'],
+    ["Sprint 1", 135],
+    ["Sprint 2", 115],
+    ["Sprint 3", 110],
+    ["Sprint 4", 105],
 
-        ]);
+  ]);
 
-        var options = {
-          width: 350,
-          height:200,
-          legend: { position: 'none' },
+  var options = {
+  width: 350,
+  height:200,
+  legend: { position: 'none' },
 
-          axes: {
-            x: {
-              0: { side: 'buttom', label: ''} // Top x-axis.
-            }
-          },
-          bar: { groupWidth: "60%" }
-        };
+  axes: {
+    x: {
+     0: { side: 'buttom', label: ''} // Top x-axis.
+    }
+   },
+  bar: { groupWidth: "60%" }
+};
 
-        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
-        // Convert the Classic options to Material options.
-        chart.draw(data, google.charts.Bar.convertOptions(options));
+var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+  // Convert the Classic options to Material options.
+chart.draw(data, google.charts.Bar.convertOptions(options));
 
-        /*grafico 2*/ google.charts.load('current', {'packages':['corechart']});  /*grafico 2*/
-              google.charts.setOnLoadCallback(drawChart);
+        /*grafico 2*/ 
+google.charts.load('current', {'packages':['corechart']});  /*grafico 2*/
+google.charts.setOnLoadCallback(drawChart);
 
-              function drawChart() {
-                var data = google.visualization.arrayToDataTable([
-                  ['Director',  '#135'],
-                  [' ',  ,],
-                  ['Sprint 1', 105,   ],
-                  ['Sprint 2',     45, ],
-                  ['Sprint 3',        75,  ],
-                  ['Sprint 4',      105,    ],
-                  [' ',  ,]
-                ]);
+function drawChart() {
+ var data = google.visualization.arrayToDataTable([
+    ['Director',  '#135'],
+    [' ',  ,],
+    ['Sprint 1', 105,   ],
+    ['Sprint 2',     45, ],
+    ['Sprint 3',        75,  ],
+    ['Sprint 4',      105,    ],
+    [' ',  ,]
+  ]);
 
-                var options = {
-                  title: '#105 STUDENTS THAT MEET THE TARGET',
+  var options = {
+    title: '#105 STUDENTS THAT MEET THE TARGET',
 
-                  isStacked: true
-                };
+    isStacked: true
+  };
 
-                var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div'));
+  var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div'));
 
-                  chart.draw(data, options);
+  chart.draw(data, options);
 
+          /*grafico 3*/
+google.charts.load('current', {'packages':['corechart']});  /*grafico 3*/
+google.charts.setOnLoadCallback(drawChart);
 
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['sprint',  '#105'],
+    [' ',  ,],
+    ['Sprint 1', 14,   ],
+    ['Sprint 2', 10, ],
+    ['Sprint 3', 30,  ],
+    ['Sprint 4',  81,    ],
+    [' ',  ,]
+  ]);
 
+  var options = {
+    title:'% ACUMULATIVE NPS',
 
-          /*grafico 3*/google.charts.load('current', {'packages':['corechart']});  /*grafico 3*/
-                        google.charts.setOnLoadCallback(drawChart);
+    isStacked: true
+  };
 
-                        function drawChart() {
-                          var data = google.visualization.arrayToDataTable([
-                            ['sprint',  '#105'],
-                            [' ',  ,],
-                            ['Sprint 1', 14,   ],
-                            ['Sprint 2', 10, ],
-                            ['Sprint 3', 30,  ],
-                            ['Sprint 4',  81,    ],
-                            [' ',  ,]
-                          ]);
+  var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div1'));
 
-                          var options = {
-                            title:'% ACUMULATIVE NPS',
-
-                            isStacked: true
-                          };
-
-                          var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div1'));
-
-                            chart.draw(data, options);
-
+  chart.draw(data, options);
 
 
-      /*Grafico 4*/google.charts.load('current', {packages: ['corechart', 'bar']});
+
+      /*Grafico 4*/
+google.charts.load('current', {packages: ['corechart', 'bar']});
 google.charts.setOnLoadCallback(drawBasic);
 
 function drawBasic() {
@@ -642,202 +642,206 @@ function drawBasic() {
     ["Sprint 6", 73, 72,69],
     ["Sprint 7", 69, 69,57],
     ["Sprint 8", 47, 45,42.1],
-    ]);
+  ]);
 
-      var options = {
-        title: '62 (% Of TOTAL #135)',
+  var options = {
+  title: '62 (% Of TOTAL #135)',
 
-        hAxis: {
-          title: '',
-          format: 'h:mm a',
-          viewWindow: {
-            min: [7, 30, 0],
-            max: [17, 30, 0]
-          }
-        },
-        vAxis: {
-          title: ''
-        }
-      };
+  hAxis: {
+    title: '',
+    format: 'h:mm a',
+    viewWindow: {
+      min: [7, 30, 0],
+      max: [17, 30, 0]
+    }
+  },
+  vAxis: {
+    title: ''
+  }
+};
 
-      var chart = new google.visualization.ColumnChart(
-        document.getElementById('chart_div2'));
+var chart = new google.visualization.ColumnChart(
+document.getElementById('chart_div2'));
 
-        chart.draw(data, options);
-
-
-
-  /*grafico 5*/ google.charts.load('current', {'packages':['corechart']});/*grafico 5*/
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['# STUDENTS THAT MEET THE TARGET',  90],
-          ['# STUDENTS THAT DON´T MEET THE TARGET', 45],
-
-        ]);
-
-        var options = {
-          title: 'Tech Skills'
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
+chart.draw(data, options);
 
 
 
-/*garfico 6*/ google.charts.load('current', {packages: ['corechart', 'bar']});/*garfico 6*/
-  google.charts.setOnLoadCallback(drawBasic);
+  /*grafico 5*/ 
+google.charts.load('current', {'packages':['corechart']});/*grafico 5*/
+google.charts.setOnLoadCallback(drawChart);
 
-  function drawBasic() {
+function drawChart() {
 
-    var data = google.visualization.arrayToDataTable([
-      ['Sprint', '# HSE'],
-      ["Sprint 1",77],
-      ["Sprint 2", 79],
-      ["Sprint 3", 78],
-      ["Sprint 4", 81.3],
+  var data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['# STUDENTS THAT MEET THE TARGET',  90],
+    ['# STUDENTS THAT DON´T MEET THE TARGET', 45],
 
-      ]);
+  ]);
 
-        var options = {
-          title: '62  # Of STUDENTS THAT MEET THE TARGET',
+  var options = {
+    title: 'Tech Skills'
+  };
 
-          hAxis: {
-            title: '',
-            format: 'h:mm a',
-            viewWindow: {
-              min: [7, 30, 0],
-              max: [17, 30, 0]
-            }
-          },
-          vAxis: {
-            title: ''
-          }
-        };
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-        var chart = new google.visualization.ColumnChart(
-          document.getElementById('chart_div3'));
-
-          chart.draw(data, options);
+  chart.draw(data, options);
 
 
-/*grafico 7*/ google.charts.load('current', {'packages':['corechart']});/*grafico 7*/
-        google.charts.setOnLoadCallback(drawChart);
 
-        function drawChart() {
+/*garfico 6*/ 
+google.charts.load('current', {packages: ['corechart', 'bar']});/*garfico 6*/
+google.charts.setOnLoadCallback(drawBasic);
 
-          var data = google.visualization.arrayToDataTable([
-            ['Task', 'Hours per Day'],
-            ['# STUDENTS THAT MEET THE TARGET',  62],
-            ['# STUDENTS THAT DON´T MEET THE TARGET', 73],
+function drawBasic() {
 
-          ]);
+  var data = google.visualization.arrayToDataTable([
+    ['Sprint', '# HSE'],
+    ["Sprint 1",77],
+    ["Sprint 2", 79],
+    ["Sprint 3", 78],
+    ["Sprint 4", 81.3],
 
-          var options = {
-            title: 'Life Skills'
-          };
+  ]);
 
-          var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+  var options = {
+    title: '62  # Of STUDENTS THAT MEET THE TARGET',
 
-          chart.draw(data, options);
+   hAxis: {
+    title: '',
+    format: 'h:mm a',
+    viewWindow: {
+      min: [7, 30, 0],
+      max: [17, 30, 0]
+    }
+  },
+    vAxis: {
+      title: ''
+    }
+};
+
+var chart = new google.visualization.ColumnChart(
+  document.getElementById('chart_div3'));
+
+chart.draw(data, options);
 
 
-  /*grafico 8*/google.charts.load('current', {packages: ['corechart', 'line']});
+/*grafico 7*/ 
+google.charts.load('current', {'packages':['corechart']});/*grafico 7*/
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+  var data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['# STUDENTS THAT MEET THE TARGET',  62],
+    ['# STUDENTS THAT DON´T MEET THE TARGET', 73],
+
+ ]);
+
+  var options = {
+    title: 'Life Skills'
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+  chart.draw(data, options);
+
+
+  /*grafico 8*/
+google.charts.load('current', {packages: ['corechart', 'line']});
 google.charts.setOnLoadCallback(drawBackgroundColor);
 
 function drawBackgroundColor() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Sprint');
-      data.addColumn('number', 'SAT %');
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Sprint');
+  data.addColumn('number', 'SAT %');
 
-      data.addRows([
-        [" ", ,],
-        ["sprint 1", 48.3],
-        ["sprint 2", 24.1],
-        ["sprint 3", 45.2],
-        ["sprint 4", 48.3],
-        [" ", ,],
-        ]);
+  data.addRows([
+    [" ", ,],
+    ["sprint 1", 48.3],
+    ["sprint 2", 24.1],
+    ["sprint 3", 45.2],
+    ["sprint 4", 48.3],
+    [" ", ,],
+  ]);
 
-      var options = {
-        hAxis: {
-          title: ''
-        },
-        vAxis: {
-          title: ''
-        },
-        backgroundColor: '#f1f8e9'
-      };
+  var options = {
+    hAxis: {
+      title: ''
+    },
+    vAxis: {
+      title: ''
+    },
+    backgroundColor: '#f1f8e9'
+  };
 
-      var chart = new google.visualization.LineChart(document.getElementById('chart_div4'));
-      chart.draw(data, options);
-
-
-
-/*grafico 9*/ google.charts.load('current', {packages: ['corechart', 'line']});/*grafico 9*/
-      google.charts.setOnLoadCallback(drawBackgroundColor);
-
-      function drawBackgroundColor() {
-            var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Sprint');
-            data.addColumn('number', 'Rating  %');
-
-            data.addRows([
-              [" ", ,],
-              ["sprint 1", 15],
-              ["sprint 2", 7],
-              ["sprint 3", 17],
-              ["sprint 4", 18],
-              [" ", ,],
-              ]);
-
-            var options = {
-              hAxis: {
-                title: ''
-              },
-              vAxis: {
-                title: ''
-              },
-              backgroundColor: '#f1f8e9'
-            };
-
-            var chart = new google.visualization.LineChart(document.getElementById('chart_div5'));
-            chart.draw(data, options);
+var chart = new google.visualization.LineChart(document.getElementById('chart_div4'));
+chart.draw(data, options);
 
 
-  /*grafico 10*/ google.charts.load('current', {packages: ['corechart', 'line']});/*grafico 10*/
-                  google.charts.setOnLoadCallback(drawBackgroundColor);
 
-                  function drawBackgroundColor() {
-                        var data = new google.visualization.DataTable();
-                        data.addColumn('string', 'Sprint');
-                        data.addColumn('number', 'Rating  %');
+/*grafico 9*/ 
+google.charts.load('current', {packages: ['corechart', 'line']});/*grafico 9*/
+google.charts.setOnLoadCallback(drawBackgroundColor);
 
-                        data.addRows([
-                          [" ", ,],
-                          ["sprint 1", 41],
-                          ["sprint 2", 26],
-                          ["sprint 3", 45],
-                          ["sprint 4", 50],
-                          [" ", ,],
-                          ]);
+function drawBackgroundColor() {
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Sprint');
+  data.addColumn('number', 'Rating  %');
 
-                        var options = {
-                          hAxis: {
-                            title: ''
-                          },
-                          vAxis: {
-                            title: ''
-                          },
-                          backgroundColor: '#f1f8e9'
-                        };
+  data.addRows([
+    [" ", ,],
+    ["sprint 1", 15],
+    ["sprint 2", 7],
+    ["sprint 3", 17],
+    ["sprint 4", 18],
+    [" ", ,],
+  ]);
 
-                        var chart = new google.visualization.LineChart(document.getElementById('chart_div6'));
-                        chart.draw(data, options);
+  var options = {
+    hAxis: {
+      title: ''
+    },
+    vAxis: {
+      title: ''
+    },
+    backgroundColor: '#f1f8e9'
+  };
+
+  var chart = new google.visualization.LineChart(document.getElementById('chart_div5'));
+  chart.draw(data, options);
+
+
+  /*grafico 10*/ 
+google.charts.load('current', {packages: ['corechart', 'line']});/*grafico 10*/
+google.charts.setOnLoadCallback(drawBackgroundColor);
+
+function drawBackgroundColor() {
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Sprint');
+  data.addColumn('number', 'Rating  %');
+
+  data.addRows([
+    [" ", ,],
+    ["sprint 1", 41],
+    ["sprint 2", 26],
+    ["sprint 3", 45],
+    ["sprint 4", 50],
+    [" ", ,],
+  ]);
+
+  var options = {
+    hAxis: {
+      title: ''
+    },
+    vAxis: {
+      title: ''
+    },
+    backgroundColor: '#f1f8e9'
+  };
+ var chart = new google.visualization.LineChart(document.getElementById('chart_div6')); chart.draw(data, options);
                       }
                     }
                   }

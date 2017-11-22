@@ -1,0 +1,170 @@
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none;}
+body{
+  background: #FFE4AA
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 200px;
+  position: relative;
+  margin: auto;
+  margin-top: 7em;
+  right: 16em;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #F8AF30;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: orange;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 33em;
+    left: 45em;
+    width: 100%;
+    text-align: center;
+    background: grey;
+    width: 300px;
+    height: auto;
+    border-radius: 1em;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #F8AF30;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.premios{
+  position: absolute;
+  bottom: 26em;
+  left: 1em;
+}
+.logos{
+  position:absolute;
+  width: 10%;
+  bottom: 27em;
+  left: 48em;
+}
+.logolab{
+  position: absolute;
+  width: 25%;
+  bottom: 2em;
+  left: 1em;
+
+}
+
+
+.premios2{
+  position: absolute;
+  bottom: 26em;
+  left: 14em;
+}
+.link{
+  cursor: pointer;
+  color:blue;
+}
+
+.descrip{
+    position: absolute;
+    color: orange;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    background: rgba(18, 46, 58, 0.52);
+    width: 300px;
+    height: auto;
+    border-radius: 2em;
+    border: 2px solid white;
+    top: 3em;
+    left: 20em;
+}
+.descrip h2 {
+  color:white;
+}
+.descrip h3{
+  cursor: pointer;
+}
+.descrip h4{
+  cursor:pointer;
+  color: white;
+}
+.descrip:hover{
+  background: #B4B4B4;
+}
+.photo{
+  border-radius: 15%;
+}
+.descrip h4:hover{
+  color:orange;
+
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
